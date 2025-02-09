@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom color palette (example extension; update tailwind.config.js accordingly) */
+.bg-cream {
+  background-color: #fcfcb3;
+}

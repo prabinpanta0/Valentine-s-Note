@@ -1,0 +1,28 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# production build
+/build
+
+# temporary
+/.cache
+/.pnp
+.pnp.js
+
+# misc
+.DS_Store
+.env
+.env.local
+.idea
+.vscode
+
+# Optional npm cache directory
+.npm
+
+# Optional yarn cache directory
+.yarn-cache
+
+# git modules (if using submodules, .gitmodules may need special handling)
+.gitmodules

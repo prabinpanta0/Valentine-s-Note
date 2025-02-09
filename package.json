@@ -1,0 +1,26 @@
+{
+    "name": "valentines-note",
+    "version": "1.0.0",
+    "description": "A unique Valentine's Note website featuring personalized proposal letters.",
+    "scripts": {
+        "server": "npm --prefix server start",
+        "client": "npm --prefix client run dev",
+        "start": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Prabin Panta",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "concurrently": "^7.0.0"
+    },
+    "keywords": [
+        "valentines",
+        "proposal",
+        "love",
+        "personalized",
+        "AI",
+        "Generative AI",
+        "writer",
+        "palmyra-creative-122b"
+    ]
+}

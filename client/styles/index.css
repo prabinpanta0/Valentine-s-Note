@@ -1,0 +1,147 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Background Styling with a Soft Overlay */
+body {
+    background-image: linear-gradient(rgba(255,251,248,0.5), rgba(255,251,248,0.5)), url('/Cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* turn off scrollbars */
+    overflow: hidden;
+}
+
+/* Custom Color Palette */
+:root {
+    --color-primary-100: #FFFBF8;
+    --color-primary-200: #F9EEE9;
+    --color-primary-300: #F0E2DD;
+    --color-primary-400: #EEB6AD;
+    --color-primary-500: #DAA1A0;
+    --color-primary-border: #dba864;
+}
+/* Attractive Proposal Box Styling */
+.white-box {
+    background: linear-gradient(135deg, rgba(255,251,248,0.95), rgba(240,226,221,0.95));
+    border: 2px solid var(--color-primary-border);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 90%;
+    max-width: 850px;
+    margin: 5% auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    will-change: opacity, transform;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Decorative pseudo-element under the heading */
+.fleurdeleah {
+    font-family: 'Fleur De Leah', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--color-primary-500);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+/* .fleurdeleah::after {
+    content: '';
+    background: url('/flower_line.png') no-repeat center;
+    background-size: contain;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    padding-bottom: 40%;
+    position: absolute;
+    top: - 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.5rem;
+} */
+
+
+/* Proposal text style */
+.proposal-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4a4a4ab3;
+}
+
+/* Recipient's name styling */
+.recipient {
+    align-self: flex-start;
+}
+
+/* Signature styling */
+.signature {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--color-primary-border);
+    font-size: 1.3rem;
+}
+
+/* Sender's name styling */
+.sender {
+    align-self: flex-end;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .white-box {
+        width: 92%;
+        padding: 1.5rem;
+        margin: 3% auto;
+    }
+    .fleurdeleah {
+        font-size: 3.5rem;
+    }
+    .proposal-text {
+        font-size: 1.15rem;
+    }
+    /* Adjust the pseudo-element spacing */
+    .fleurdeleah::after {
+        bottom: -1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .white-box {
+        width: 98%;
+        padding: 1rem;
+        margin: 2% auto;
+        border-radius: 15px;
+    }
+    .fleurdeleah {
+        font-size: 3rem;
+    }
+    .proposal-text {
+        font-size: 1rem;
+    }
+    .fleurdeleah::after {
+        padding-top: 40%; /* Increased for better visibility on smaller devices */
+        bottom: -1rem;
+    }
+}
+
+/* Fade-in upward animation for a smooth entrance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

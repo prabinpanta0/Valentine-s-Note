@@ -1,0 +1,49 @@
+{
+  "name": "valentine-note-server",
+  "version": "1.0.0",
+  "description": "A website server for personalized valentines note website",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^10.0.0",
+    "openai": "^4.83.0",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^4.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "overrides": {
+    "uuid": "^7.0.0",
+    "braces": "^3.0.3",
+    "anymatch": "^3.0.0",
+    "micromatch": "^4.0.8",
+    "readdirp": "^3.0.0",
+    "punycode": "2.1.1"
+  },
+  "keywords": [
+    "valentines",
+    "proposal",
+    "love",
+    "personalized",
+    "server",
+    "AI",
+    "Generative AI",
+    "writer",
+    "palmyra-creative-122b"
+
+  ],
+  "author": "Prabin Panta",
+  "license": "MIT"
+}
