@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 
+# dependencies inside sub-directories
+**/node_modules
+
+
 # production build
 /build
 
