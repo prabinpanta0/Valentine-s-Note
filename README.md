@@ -2,6 +2,8 @@
 
 A web application that generates unique and personalized Valentine's Note using AI. The project combines a React frontend with a Node.js/Express backend, integrating with the Nvidia AI API for proposal generation.
 
+![Screenshot 2025-02-09 205024](https://github.com/user-attachments/assets/d97a54b7-4636-4d51-8bce-bde9bddda499)
+
 ## Features
 
 - Personalized proposal generation
